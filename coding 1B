@@ -1,0 +1,17 @@
+package A1;
+
+public class a2 {
+	public static void main(String[] args) {
+		double a=3000;
+		double b=0.035;
+		double c;
+		double d;
+		double e;
+		c=a*b;
+		d=(c+a)/(5*12);
+		e=a+c;
+		System.out.println("Sum of interest is:"+c);
+		System.out.println("monthly payment is:"+d);
+		System.out.println("total of payment is:"+e);
+	}
+}
