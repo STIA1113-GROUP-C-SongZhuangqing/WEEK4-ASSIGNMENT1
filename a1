@@ -1,0 +1,43 @@
+package A1;
+import java.util.Scanner;
+public class a1 {
+	public static void main(String[] args) {
+		double numbers;
+		double quantity;
+		double quantity1;
+		double quantity2;
+		double price;
+		double discount;
+		double price1;
+		double discount1;
+		double price2;
+		double discount2;
+		double total1;
+		double total2;
+		double item;
+		double item1;
+		double item2;
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter your number of items:");
+		numbers=scan.nextInt();
+		System.out.println("Enter your quantity:");
+		quantity=scan.nextInt();
+		System.out.println("Enter the price: ");
+		price=scan.nextDouble();
+		item=quantity*price;
+		
+		if(1<numbers);
+		
+		System.out.println("Enter your quantity :");
+		quantity1=scan.nextInt();
+		System.out.println("Enter the price: ");
+		price1=scan.nextDouble();
+		item1=quantity*price;
+		if(2<numbers);
+		System.out.println("Enter your quantity :");
+		quantity2=scan.nextInt();
+		System.out.println("Enter the price: ");
+		price2=scan.nextDouble();
+		item2=quantity*price;
+		
+		total1=item+item1+item2;
