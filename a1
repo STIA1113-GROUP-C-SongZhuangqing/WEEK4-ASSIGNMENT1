@@ -1,43 +1,85 @@
 package A1;
 import java.util.Scanner;
-public class a1 {
+public class aa1 {
 	public static void main(String[] args) {
-		double numbers;
-		double quantity;
+		int numbers;
 		double quantity1;
 		double quantity2;
-		double price;
-		double discount;
+		double quantity3;
 		double price1;
-		double discount1;
 		double price2;
-		double discount2;
+		double price3;
 		double total1;
-		double total2;
-		double item;
-		double item1;
-		double item2;
+		double totala;
+		double discount;
+		double total;
 		Scanner scan=new Scanner(System.in);
 		System.out.println("Enter your number of items:");
 		numbers=scan.nextInt();
-		System.out.println("Enter your quantity:");
-		quantity=scan.nextInt();
-		System.out.println("Enter the price: ");
-		price=scan.nextDouble();
-		item=quantity*price;
-		
-		if(1<numbers);
-		
-		System.out.println("Enter your quantity :");
-		quantity1=scan.nextInt();
-		System.out.println("Enter the price: ");
-		price1=scan.nextDouble();
-		item1=quantity*price;
-		if(2<numbers);
-		System.out.println("Enter your quantity :");
-		quantity2=scan.nextInt();
-		System.out.println("Enter the price: ");
-		price2=scan.nextDouble();
-		item2=quantity*price;
-		
-		total1=item+item1+item2;
+		if(numbers==1) {
+			System.out.println("Enter your quantity:");
+			quantity1=scan.nextInt();
+			System.out.println("Enter the price: ");
+			price1=scan.nextDouble();
+			total1=quantity1*price1;
+			if(total1>100) {
+				discount=0.8;
+			}
+			else {
+				discount=0.9;
+			}
+			total=discount*total1;
+			System.out.println(total);
+			System.out.println(discount);
+			
+		}
+		else if(numbers==2) {
+			System.out.println("Enter your quantity for the first item:");
+			quantity1=scan.nextInt();
+			System.out.println("Enter the price for the first item: ");
+			price1=scan.nextDouble();
+			System.out.println("Enter your quantity for the second item:");
+			quantity2=scan.nextInt();
+			System.out.println("Enter the price for the second item: ");
+			price2=scan.nextDouble();
+			total1=(quantity1*price1)+(quantity2*price2);
+			if(total1>100) {
+				discount=0.8;
+			}
+			else {
+				discount=0.9;
+			}
+			total=discount*total1;
+			System.out.println(total);
+			System.out.println(discount);
+		}
+		else if(numbers==3) {
+			System.out.println("Enter your quantity for the first item:");
+			quantity1=scan.nextInt();
+			System.out.println("Enter the price for the first item: ");
+			price1=scan.nextDouble();
+			System.out.println("Enter your quantity for the second item:");
+			quantity2=scan.nextInt();
+			System.out.println("Enter the price for the second item: ");
+			price2=scan.nextDouble();
+			System.out.println("Enter your quantity for the third item:");
+			quantity3=scan.nextInt();
+			System.out.println("Enter the price for the third item: ");
+			price3=scan.nextDouble();
+			total1=(quantity1*price1)+(quantity2*price2)+(quantity3*price3);
+			if(total1>100) {
+				discount=0.8;
+			}
+			else {
+				discount=0.9;
+			}
+			total=discount*total1;
+			System.out.println(total);
+			System.out.println(discount);
+		}
+		else {
+			System.out.println("erorr");
+		}
+
+}
+}
